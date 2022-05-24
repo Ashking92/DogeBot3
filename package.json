@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DGXeon"
+    "url": "git+https://github.com/Ashking92"
   },
   "keywords": [
     "Wasu"
@@ -52,7 +52,7 @@
   "author": "Ash",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DGXeon/DogeBot3/issue"
+    "url": "https://github.com/Ashking92/DogeBot3/issue"
   },
-  "homepage": "https://github.com/DGXeon/DogeBot3"
+  "homepage": "https://github.com/Ashking92/DogeBot3.git"
 }
