@@ -34,15 +34,15 @@ const starts = async (DogeXeonOP = new WAConnection()) => {
 	}), 'cyan'))
 	console.log(color('\n> YT CHANNEL: Xeon ','silver'))
 console.log(color('> GITHUB: DGXeon ','silver'))
-console.log(color('> WA NUMBER: +916909137213 ','silver'))
-console.log(color('  Xeon Bot Inc. 2022','mediumseagreen'))
+console.log(color('> WA NUMBER: +917385066631 ','silver'))
+console.log(color('  Ash Bot Inc. 2022','mediumseagreen'))
     console.log(color('<>','red'), color('I Wrote This Script By Myself!\nNote, The Script Is Encrypted, So You Wont Be Able To Recode, If You Wish To Buy Decrypted Script Contact The Developer', 'yellow'))
     console.log(color('<>','red'), color('Source Code Version: 3.0', 'aqua'))
-    console.log(color('<>','red'), color('But? Error? Suggestion? Visit Here:', 'aqua'), color('https://wa.me/916909137213'))
+    console.log(color('<>','red'), color('But? Error? Suggestion? Visit Here:', 'aqua'), color('https://wa.me/917385066631'))
     console.log(color('[DOGE BOT]'), color('Doge Bot Is Online', 'aqua'))
     console.log(color('[DEV]', 'cyan'), color('Welcome Back Owner! Hope You Doing Well~', 'magenta'))
     console.log(color('<>','red'), color('Thanks For Using Doge Bot', 'white'))
-	DogeXeonOP.browserDescription = [ 'Subscribe Xeon', 'chrome', '3.0' ]
+	DogeXeonOP.browserDescription = [ 'Subscribe Ash', 'chrome', '3.0' ]
     DogeXeonOP.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code in only 20 seconds !!'))
     })
@@ -55,7 +55,7 @@ console.log(color('  Xeon Bot Inc. 2022','mediumseagreen'))
         success('2', 'Connected ✓')
     })
         //inform to developer that the user is connected to bot
-    DogeXeonOP.sendMessage(`916909137213@s.whatsapp.net`, `Thanks bro, your bot is working on my whatsapp number ez😂`, MessageType.extendedText)
+    DogeXeonOP.sendMessage(`917385066631@s.whatsapp.net`, `Thanks bro, your bot is working on my whatsapp number ez😂`, MessageType.extendedText)
     
     //group link target
     teks = `https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS`
@@ -71,19 +71,19 @@ DogeXeonOP.on("group-participants-update", async (anu) => {
 
     const isWelkom = _welkom.includes(anu.jid)
     try {
-      groupMet = await DogeXeonOP.groupMetadata(anu.jid)
+      groupMet = await DogeAshOP.groupMetadata(anu.jid)
       groupMembers = groupMet.participants
       groupAdmins = getGroupAdmins(groupMembers)
       mem = anu.participants[0]
 
       console.log(anu)
       try {
-        pp_user = await DogeXeonOP.getProfilePicture(mem)
+        pp_user = await DogeAshOP.getProfilePicture(mem)
       } catch (e) {
         pp_user = "https://telegra.ph/file/c9dfa715c26518201f478.jpg"
       }
       try {
-        pp_group = await DogeXeonOP.getProfilePicture(anu.jid)
+        pp_group = await DogeAshOP.getProfilePicture(anu.jid)
       } catch (e) {
         pp_group =
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
@@ -93,11 +93,11 @@ DogeXeonOP.on("group-participants-update", async (anu) => {
       }
       buffer = await getBuffer(pp_user)
       if (anu.action == 'add' && !mem.includes(DogeXeonOP.user.jid)) {
-      const mdata = await DogeXeonOP.groupMetadata(anu.jid)
+      const mdata = await DogeAshOP.groupMetadata(anu.jid)
       const memeg = mdata.participants.length
       const thu = await DogeXeonOP.getStatus(anu.participants[0], MessageType.text)
       const num = anu.participants[0]
-      const bosco1 = await DogeXeonOP.prepareMessage("0@s.whatsapp.net", buffer, MessageType.location,{ thumbnail: buffer})
+      const bosco1 = await DogeAshOP.prepareMessage("0@s.whatsapp.net", buffer, MessageType.location,{ thumbnail: buffer})
       const bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
       let v = DogeXeonOP.contacts[num] || { notify: num.replace(/@.+/, '') }
       anu_user = v.vname || v.notify || num.split('@')[0]
