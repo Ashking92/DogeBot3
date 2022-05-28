@@ -1,5 +1,5 @@
 {
-  "name": "DogeBot",
+  "name": "JackBot",
   "version": "3.0.0",
   "description": "None",
   "main": "main.js",
@@ -49,7 +49,7 @@
   "keywords": [
     "Wasu"
   ],
-  "author": "Xeon",
+  "author": "Ash",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DGXeon/DogeBot3/issue"
